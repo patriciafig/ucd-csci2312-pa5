@@ -9,6 +9,6 @@ set(SOURCE_FILES
     TemplateTests.cpp
     TemplateTests.h
     main.cpp
-    less_functor.h custom_iterator.h)
+    less_functor.h custom_iterator.h less_functor.h.cpp)
 
-add_executable(ucd_csci2312_pa5 ${SOURCE_FILES})
+add_executable(ucd_csci2312_pa5 ${SOURCE_FILES} less_functor.h.cpp)
