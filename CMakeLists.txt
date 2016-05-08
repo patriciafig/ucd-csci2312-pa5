@@ -4,11 +4,14 @@ project(ucd_csci2312_pa5)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
+    CMakeLists.txt
+    custom_iterator.h
     ErrorContext.cpp
     ErrorContext.h
-    TemplateTests.cpp
-    TemplateTests.h
+    less_functor.h
     main.cpp
-    less_functor.h custom_iterator.h less_functor.h.cpp less_functor.h.h less_functor.h)
+    README.md
+    TemplateTests.cpp
+    TemplateTests.h)
 
-add_executable(ucd_csci2312_pa5 ${SOURCE_FILES} less_functor.h.cpp less_functor.h.h less_functor.h)
+add_executable(ucd_csci2312_pa5 ${SOURCE_FILES})
